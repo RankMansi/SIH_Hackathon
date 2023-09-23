@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+/* global-styles.css */
+/* globals.css */
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 24px;
+  background-color: #F5F5DC;
+  font-family: 'Roboto Slab', serif;
+}
+
+.spline-attribution {
+  display: none !important;
+}
+
+.h1 {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .flex-col.md\:flex-row.items-center.justify-between {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .flex-col.md\:flex-row.items-center.justify-between a {
+    margin-top: 0.5rem;
+  }
+
+  .spline-container {
+    background-image: url('https://prod.spline.design/NBMmqntIyhaXOhQJ/scene.splinecode');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+  }
+}
