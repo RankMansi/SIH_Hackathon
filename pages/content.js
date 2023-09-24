@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 
 export default function RouteIDContent() {
-    const [routeID, setRouteID] = useState(""); // Initial Route ID value
+    const [routeID, setRouteID] = useState("");
+    
 
     const handleRouteIDChange = (event) => {
         setRouteID(event.target.value);
     };
+
+
 
     const data = [
         { reached: 'Koba circle', upcoming: 'abcd' },
@@ -13,33 +16,9 @@ export default function RouteIDContent() {
         { reached: 'Koba circle', upcoming: 'abcd' },
         { reached: 'Koba circle', upcoming: 'abcd' },
         { reached: 'Koba circle', upcoming: 'abcd' },
-        { reached: 'Koba circle', upcoming: 'abcd' },
-        { reached: 'Koba circle', upcoming: 'abcd' },
-        { reached: 'Koba circle', upcoming: 'abcd' },
-        { reached: 'Koba circle', upcoming: 'abcd' },
-        { reached: 'Koba circle', upcoming: 'abcd' },
-        { reached: 'Koba circle', upcoming: 'abcd' },
-        { reached: 'Koba circle', upcoming: 'abcd' },
-        { reached: 'Koba circle', upcoming: 'abcd' },
-        { reached: 'Koba circle', upcoming: 'abcd' },
-        { reached: 'Koba circle', upcoming: 'abcd' },
-        { reached: 'Koba circle', upcoming: 'abcd' },
-        { reached: 'Koba circle', upcoming: 'abcd' },
-        { reached: 'Koba circle', upcoming: 'abcd' },
-        { reached: 'Koba circle', upcoming: 'abcd' },
-        { reached: 'Koba circle', upcoming: 'abcd' },
-        { reached: 'Koba circle', upcoming: 'abcd' },
-        { reached: 'Koba circle', upcoming: 'abcd' },
-        { reached: 'Koba circle', upcoming: 'abcd' },
-        { reached: 'Koba circle', upcoming: 'abcd' },
-        { reached: 'Koba circle', upcoming: 'abcd' },
-        { reached: 'Koba circle', upcoming: 'abcd' },
-        { reached: 'Koba circle', upcoming: 'abcd' },
-        { reached: 'Koba circle', upcoming: 'abcd' },
-        { reached: 'Koba circle', upcoming: 'abcd' },
-
-        // Add more data objects as needed
     ];
+
+
 
     return (
         <div>
